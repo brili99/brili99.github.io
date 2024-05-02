@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -13,55 +13,69 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-start ">
+    <!-- <div class="d-flex justify-content-start ">
         <button type="button" class="btn" data-bs-toggle="offcanvas" href="#offcanvas-navigation" role="button"
             aria-controls="offcanvas-navigation"><i class="fa-solid fa-bars text-light"></i></button>
+    </div> -->
+    <div class="sidebar d-flex flex-column">
+        <div class="flex-fill">
+            <a class="active" href="/">Portofolio</a>
+            <a href="/projects.html">Projects</a>
+        </div>
+        <div>
+            <button type="button" class="btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-lg mb-2">
-                    <div class="card-header fs-3 fw-semibold">Profile</div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12">
-                                <img src="https://github.com/brili99.png" class="img-thumbnail rounded-circle"
-                                    alt="My profile picture">
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="fs-3 fw-semibold">Muhammad Brilian Erranaomi</div>
-                                <div class="fs-4 fw-lighter">235411096</div>
-                                <div class="fs-4 fw-lighter">Informatika - S1</div>
+
+    <!-- Page content -->
+    <div class="content">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-header fs-3 fw-semibold">Profile</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <img src="https://github.com/brili99.png" class="img-thumbnail rounded-circle"
+                                        alt="My profile picture">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="fs-3 fw-semibold">Muhammad Brilian Erranaomi</div>
+                                    <div class="fs-4 fw-lighter">235411096</div>
+                                    <div class="fs-4 fw-lighter">Informatika - S1</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-lg mb-2">
-                    <div class="card-header fs-3 fw-semibold">Riwayat pendidikan</div>
-                    <div class="card-body">
-                        <ol class="list-group list-group-numbered">
-                            <li class="list-group-item">(Lulus 2011) SD Muhammadiyah Warungboto</li>
-                            <li class="list-group-item">(Lulus 2014) SMP Muhammadiyah 7 Yogyakarta</li>
-                            <li class="list-group-item">(Lulus 2017) SMK SMTI Yogyakarta</li>
-                            <li class="list-group-item">(Lulus 2020) STMIK AKAKOM, Teknik Komputer - D3</li>
-                            <li class="list-group-item">(Sekarang) Universitas Teknologi Digital Indonesia, Informatika
-                                - S1
-                            </li>
-                        </ol>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-header fs-3 fw-semibold">Riwayat pendidikan</div>
+                        <div class="card-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">(Lulus 2011) SD Muhammadiyah Warungboto</li>
+                                <li class="list-group-item">(Lulus 2014) SMP Muhammadiyah 7 Yogyakarta</li>
+                                <li class="list-group-item">(Lulus 2017) SMK SMTI Yogyakarta</li>
+                                <li class="list-group-item">(Lulus 2020) STMIK AKAKOM, Teknik Komputer - D3</li>
+                                <li class="list-group-item">(Sekarang) Universitas Teknologi Digital Indonesia,
+                                    Informatika
+                                    - S1
+                                </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-lg mb-2">
-                    <div class="card-header fs-3 fw-semibold">Riwayat pekerjaan</div>
-                    <div class="card-body">
-                        <ol class="list-group list-group-numbered">
-                            <li class="list-group-item">Calty Farm - Research and Development (1 tahun)</li>
-                            <li class="list-group-item">CV PCB Expres - Programmer IoT (sampai sekarang)</li>
-                        </ol>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-header fs-3 fw-semibold">Riwayat pekerjaan</div>
+                        <div class="card-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Calty Farm - Research and Development (1 tahun)</li>
+                                <li class="list-group-item">CV PCB Expres - Programmer IoT (sampai sekarang)</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +83,7 @@
     </div>
 
     <!-- Offcanvas navigasi -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-navigation"
+    <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-navigation"
         aria-labelledby="offcanvas-navigation-label">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvas-navigation-label">Navigasi</h5>
@@ -83,8 +97,10 @@
                 <a href="#" class="list-group-item list-group-item-action">Projects</a>
             </div>
         </div>
-    </div>
+    </div> -->
+    <script src="/lib/jquery-3.7.1.min.js"></script>
     <script src="/lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
