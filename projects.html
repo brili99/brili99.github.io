@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Set bahasa ke en, dan tema bootstrap ke default light -->
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <!-- declare encode teks ke UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Agar otomatis scaling, membuat app responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul doc -->
+    <title>Projects</title>
+
+    <!-- Impor css bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Impor css fontawesome untuk icons -->
+    <link rel="stylesheet" href="/lib/fontawesome-free-6.5.2-web/css/all.min.css">
+    <!-- Impor custom global css untuk tampilan sidebar dan content -->
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body>
+    <!-- Side bar + flex untuk navigasii -->
+    <div class="sidebar d-flex flex-column">
+        <!-- Flex fill untuk selalu memenuhi sisa ruang, sehingga sidebar-footer ada dibawah -->
+        <div class="flex-fill">
+            <!-- Links navigasi -->
+            <a href="/">Portofolio</a>
+            <!-- Links active agar sebagai selector page yang digunakan -->
+            <a class="active" href="/projects.html">Projects</a>
+        </div>
+        <!-- Container sidebar footer, untuk container control -->
+        <div class="sidebar-footer">
+            <!-- Tombol atur tema -->
+            <button type="button" class="btn" id="btn-theme">
+                <!-- Icon bulan dari fontawesome -->
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Buat container dari bootstrap + margin top 1 rem -->
+        <div class="container mt-3">
+            <!-- Buat display ke flex row -->
+            <div class="row">
+                <!-- Buat pembagi row dengan size 4 lg 6 md 12 sm sesuai layar -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <!-- Buat card dengan shadow dan margin bottom -->
+                    <div class="card shadow-lg mb-2">
+                        <!-- Buat image header card -->
+                        <img src="/img/lrmphp.png" class="card-img-top" alt="gambar project lrmphp">
+                        <!-- Buat container body card -->
+                        <div class="card-body">
+                            <!-- menggunakan text style css dari bootstrap card-title -->
+                            <h5 class="card-title">Project LRMPHP</h5>
+                            <!-- menggunakan text style css dari bootstrap card-text -->
+                            <p class="card-text">Project ini dari kementrian kelautan dan perikanan untuk
+                                otomatisasi turbin oksidasi air</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buat pembagi row dengan size 4 lg 6 md 12 sm sesuai layar -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <!-- Buat card dengan shadow dan margin bottom -->
+                    <div class="card shadow-lg mb-2">
+                        <!-- Buat image header card -->
+                        <img src="/img/ncare.png" class="card-img-top" alt="gambar project ncare">
+                        <!-- Buat container body card -->
+                        <div class="card-body">
+                            <!-- menggunakan text style css dari bootstrap card-title -->
+                            <h5 class="card-title">Project Ncare</h5>
+                            <!-- menggunakan text style css dari bootstrap card-text -->
+                            <p class="card-text">Project ini yaitu untuk sistem panggil perawat dari kamar-kamar
+                                rumah sakit</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buat pembagi row dengan size 4 lg 6 md 12 sm sesuai layar -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <!-- Buat card dengan shadow dan margin bottom -->
+                    <div class="card shadow-lg mb-2">
+                        <!-- Buat image header card -->
+                        <img src="/img/ncare.png" class="card-img-top" alt="gambar project ncare">
+                        <!-- Buat container body card -->
+                        <div class="card-body">
+                            <!-- menggunakan text style css dari bootstrap card-title -->
+                            <h5 class="card-title">Project Ncare</h5>
+                            <!-- menggunakan text style css dari bootstrap card-text -->
+                            <p class="card-text">Project ini yaitu untuk sistem panggil perawat dari kamar-kamar
+                                rumah sakit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Impor library jquery -->
+    <script src="/lib/jquery-3.7.1.min.js"></script>
+    <!-- Impor library js bootstrap, sebenernya ngak kepake juga sih karena tidak ada modal dsb -->
+    <script src="/lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Impor global script untuk atur tema dsb -->
+    <script src="/main.js"></script>
+</body>
+
+</html>

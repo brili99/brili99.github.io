@@ -1,10 +1,12 @@
 html,
 body,
 .content {
+  /* Buat ketinggian html, body dan .content full screen agar tidak merusak background */
   min-height: 100vh;
 }
 
 body {
+  /* Buat background gambar dengan tambahan gradient color */
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"),
     linear-gradient(
       170deg,
@@ -14,62 +16,89 @@ body {
     );
 }
 
-/* The side navigation menu */
+/* Membuat sidebar */
 .sidebar {
   margin: 0;
   padding: 0;
+  /* Lebar sidebar */
   width: 200px;
+  /* Buat background transparant hitam */
   background-color: rgba(0, 0, 0, 0.3);
+  /* Posisi di fix */
   position: fixed;
+  /* Ketinggian dibuat 100% agar selalu di kiri */
   height: 100%;
+  /* Munculkan scrollbar di sidebar jika melebihi tinggi layar */
   overflow: auto;
 }
 
 /* Sidebar links */
 .sidebar a {
+  /* Display block agar link menjadi column */
   display: block;
+  /* Teks color putih */
   color: white;
+  /* Padding 16 agar terdapat space antar teks navigasi */
   padding: 16px;
+  /* Agar tampilan default hyperlink hilang, menjadi teks biasa */
   text-decoration: none;
 }
 
-/* Active/current link */
+/* Link sidebar navigasi yang aktif */
 .sidebar a.active {
+  /* Background biru saphire transparant */
   background-color: #0004ff60;
+  /* teks color putih */
   color: white;
 }
 
-/* Links on mouse-over */
+/* saat mouse hover ke link sidebar */
 .sidebar a:hover:not(.active) {
+  /* background abu-abu */
   background-color: #555;
+  /* teks putih */
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/* Untuk container content */
 div.content {
+  /* Margin dibuat 200px menyesuaikan lebar sidebar */
   margin-left: 200px;
+  /* Padding x 16px y 1px*/
   padding: 1px 16px;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* Saat lebar layar dibawah 700px */
 @media screen and (max-width: 700px) {
   .sidebar {
+    /* Lebar sidebar dibuat 100% */
     width: 100%;
+    /* Tinggi menjadi auto agar menjadi tampilan topbar */
     height: auto;
+    /* Posisi relatif */
     position: relative;
   }
   .sidebar a {
+    /* Link float ke kiri */
     float: left;
   }
   div.content {
+    /* Margin kiri pada content dihapus */
     margin-left: 0;
   }
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* Saat lebar layar dibawah 400px */
 @media screen and (max-width: 400px) {
   .sidebar a {
+    /* navigasi text align jadi tengah */
     text-align: center;
+    /* Hapus float  */
     float: none;
+  }
+
+  .sidebar-footer {
+    /* Hilangkan tombol navigasi tema */
+    display: none;
   }
 }
